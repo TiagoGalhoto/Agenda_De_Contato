@@ -21,26 +21,19 @@
         Agenda De Contato.
     </nav>
 
-    
-
-
-
-    
-
     <div class="container d-grid gap-2 text-center">
+       
+        <?php
 
-    <?php
-
-    if(isset($_GET['msg']))
-    {
-        $msg = $_GET['msg'];
-        echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
-        '.$msg.'
+        if (isset($_GET['msg'])) 
+        {
+            $msg = $_GET['msg'];
+            echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+        ' . $msg . '
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>';
-    }
-    ?>
-
+        }
+        ?>
 
         <table class="table table-hover text-center">
             <thead class="table-dark">
@@ -70,30 +63,32 @@
                         <td><?php echo $row['tel'] ?></td>
                         <td><?php echo $row['email'] ?></td>
                         <td>
-                            <a href="" class="link-primary"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i></a>
-                            <a href="" class="link-dark"><i class="fa-solid fa-trash fs-5"></i></a>
+                            <a href="editar.php?id=<?php echo $row['id'] ?>" class="link-primary"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i></a>
+
+                            <a href="delete.php?id=<?php echo $row['id'] ?>" class="link-dark"><i class="fa-solid fa-trash fs-5"></i></a>
                         </td>
 
                     </tr>
 
-
-
                 <?php
                 }
-
-
-
 
                 ?>
 
             </tbody>
         </table>
 
-        <a href="adicionar.php" class="btn btn-primary">Novo Contato</a>
+        <div class="container d-flex justify-content-center">
+
+            <div class="row" style="width: 30vw; min-width:300px;">
+
+                <a href="adicionar.php" class="btn btn-primary">Novo Contato</a>
+
+            </div>
+
+        </div>
 
     </div>
-
-
 
     <!-- Boststrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

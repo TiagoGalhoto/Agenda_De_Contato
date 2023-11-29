@@ -11,4 +11,4 @@ if (!$db_conexao)
 {
     die("! Falha na Conexão " . mysqli_connect_error());
 }
-echo " Conectado com successo ! ";
+//echo " Conectado com successo ! ";
