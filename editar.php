@@ -110,6 +110,7 @@ if (isset($_POST["submit"])) {
 
                         <a href="index.php" class="btn btn-warning">Cancelar</a>
                     </div>
+                    
                 </div>
             </form>
         </div>

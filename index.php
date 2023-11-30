@@ -77,6 +77,7 @@
 
             </tbody>
         </table>
+        
 
         <div class="container d-flex justify-content-center">
 
@@ -85,7 +86,7 @@
                 <a href="adicionar.php" class="btn btn-primary">Novo Contato</a>
 
             </div>
-
+            
         </div>
 
     </div>
