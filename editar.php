@@ -85,7 +85,7 @@ if (isset($_POST["submit"])) {
 
                         <label>Tipo De Contato :</label>
 
-                        <input type="radio" id="Telefone" name="t_contato" value="Telefone" <?php echo ($row['t_contato'] == 'Telefone') ? "checked" : ""; ?>>
+                        <input type="radio" id="Telefone" name="t_contato" value="Tel. Residencial" <?php echo ($row['t_contato'] == 'Telefone') ? "checked" : ""; ?>>
                         <label for="Telefone">Tel. Residencial</label>
 
                         <input type="radio" id="celular" name="t_contato" value="celular" <?php echo ($row['t_contato'] == 'celular') ? "checked" : ""; ?>>

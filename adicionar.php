@@ -73,7 +73,7 @@ if (isset($_POST['salvar']))
 
                         <label>Tipo De Contato :</label>
 
-                        <input type="radio" id="Telefone" name="t_contato" value="Telefone">
+                        <input type="radio" id="Telefone" name="t_contato" value="Tel. Residencial">
                         <label for="Telefone">Tel. Residencial</label>
 
                         <input type="radio" id="celular" name="t_contato" value="celular">
