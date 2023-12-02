@@ -19,14 +19,14 @@
     <!-- nav bar Titulo -->
     <nav class="navbar navbar-light justify-content-center fs-3 mb-5" style="background-color:LightGray;">
         Agenda De Contato.
+
     </nav>
 
     <div class="container d-grid gap-2 text-center">
-       
+
         <?php
 
-        if (isset($_GET['msg'])) 
-        {
+        if (isset($_GET['msg'])) {
             $msg = $_GET['msg'];
             echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
         ' . $msg . '
@@ -34,7 +34,7 @@
       </div>';
         }
         ?>
-
+    
         <table class="table table-hover text-center">
             <thead class="table-dark">
                 <tr>
@@ -77,7 +77,6 @@
 
             </tbody>
         </table>
-        
 
         <div class="container d-flex justify-content-center">
 
@@ -86,7 +85,7 @@
                 <a href="adicionar.php" class="btn btn-primary">Novo Contato</a>
 
             </div>
-            
+
         </div>
 
     </div>
